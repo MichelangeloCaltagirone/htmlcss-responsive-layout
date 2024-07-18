@@ -1,0 +1,51 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Utility */
+img,
+iframe {
+    width: 100%;
+}
+.flex {
+    display: flex;
+}
+.container {
+   width: 95%;
+   margin: 0 auto;
+}
+
+
+
+/* Header style */
+
+h1 {
+    color: goldenrod;
+    font-family: 'Nerko One', cursive;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Main style */
+/* Section of the info of the dessert */
+
+/* .rated-score::after {
+    /* content: per fargli mettere le icone nel css e non nel html
+ } */
+
+ .presentation {
+    justify-content: space-between;
+    padding: 0.5rem 0;
+ }
+
+ .dessert-info {
+    flex-direction: column;
+ }
+
+
+ .social-media {
+    justify-content: space-around;
+ }
