@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Giallo Booleano</title>
 </head>
 <body>
@@ -17,7 +18,10 @@
             <header>
                 <div>DOLCI E DESSERTS</div>
                 <div class="flex presentation">
-                    <h2>Tiramisù</h2>
+                    <div>
+                        <h2>Tiramisù</h2><h2 class="hidden">(Dolce Tradizionale)</h2>
+                    </div>
+                    
                     <span><span class="rated-score"><i class="fa-solid fa-star"></i>4.6/</span>5<button>RATE</button></span>
                 </div>
             </header>
@@ -37,13 +41,15 @@
                         <hr>                     
                         <div><i class="fa-solid fa-carrot"></i>vegetariano</div>  
                     </div>
-                    <ul>
-                        <li><i class="fa-solid fa-trophy"></i>Difficoltà:<span>Facile</span></li>
-                        <li><i class="fa-solid fa-clock"></i>Tempo:<span>40 min</span></li>
-                        <li><i class="fa-solid fa-chart-pie"></i>Porzione per:<span>8 persone</span></li>
-                        <li><i class="fa-solid fa-euro-sign"></i>Costo:<span>Contenuto</span></li>
-                        <li><i class="fa-solid fa-thumbtack"></i>Note:<span>+ 2 ore di riposo</span> </li>
-                    </ul>
+                    <div class="flex info-ricetta">
+                        <span><i class="fa-solid fa-trophy"></i>Difficoltà:<span>Facile</span></span>
+                        <span><i class="fa-solid fa-clock"></i>Tempo:<span>40 min</span></span>
+                        <span><i class="fa-solid fa-chart-pie"></i>Porzione per:<span>8 persone</span></span>
+                        <span><i class="fa-solid fa-euro-sign"></i>Costo:<span>Contenuto</span></span>
+                        <span><i class="fa-solid fa-thumbtack"></i>Note:<span>+ 2 ore di riposo</span></span>
+
+                    </div>
+
                 </div>
             </section>
 
@@ -60,7 +66,7 @@
                 <h2>Presentation</h2>
                 <div class="custom-hr"></div>
                 <img src="img/tiramisu.jpg" alt="dolce tiramisù">
-                <p>Lorem ipsum dolor sit, maramet consectetur adipisicing elit. Mollitia neque, quia cumque similique hic animi porro aspernatur ullam adipisci exercitationem rem voluptatum maxime, sed eos, laborum esse suscipit ea quibusdam.
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quo dolores facere dolore quisquam, eveniet exercitationem iste! Numquam cumque voluptates blanditiis incidunt dignissimos optio, magnam distinctio autem dolorum sunt dolores.Lorem ipsum dolor sit, maramet consectetur adipisicing elit. Mollitia neque, quia cumque similique hic animi porro aspernatur ullam adipisci exercitationem rem voluptatum maxime, sed eos, laborum esse suscipit ea quibusdam.
                 Temporibus numquam reprehenderit repellendus, incidunt, necessitatibus doloribus beatae explicabo, vel dolorum excepturi illo fuga facilis at rerum. Repellendus rerum architecto pariatur exercitationem illum! Debitis quidem ab, necessitatibus hic officiis dicta?
                 Accusantium temporibus explicabo inventore necessitatibus dolores, repellendus aperiam quod deleniti veritatis id dolor, laudantium deserunt maxime pariatur odit omnis quaerat voluptas. Laboriosam, autem deleniti fuga quidem veritatis illo rem? Fugit.</p>
 
@@ -74,15 +80,20 @@
     <footer>
         <span>2021 Giallo Booleano S.p.a.</span>
         <address>Via Tal dei tali, 10 - 888098 Lamezia terme - VAT 224456775432</address>
-        <div class="flex row">
+        <div class="link-container">
+            <div class="flex row">
             
+
                 <a href="#">terms of use</a>
                 <a href="#">Privacy Policy</a>
                 <a href="#">Cookie Policy</a>
                 <a href="#">Disclaimer</a>
                 <a href="#">About Us</a>    
 
+            </div>
+
         </div>
+        
         
 
 
