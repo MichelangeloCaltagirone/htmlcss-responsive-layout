@@ -17,7 +17,15 @@ iframe {
    width: 95%;
    margin: 0 auto;
 }
-
+ul {
+    list-style-type: none;
+}
+main {
+    background-color: lightpink;
+}
+footer {
+    background-color: violet;
+}
 
 
 /* Header style */
@@ -26,7 +34,7 @@ h1 {
     color: goldenrod;
     font-family: 'Nerko One', cursive;
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
 }
 
 /* Main style */
@@ -36,16 +44,128 @@ h1 {
     /* content: per fargli mettere le icone nel css e non nel html
  } */
 
- .presentation {
-    justify-content: space-between;
-    padding: 0.5rem 0;
- }
+
 
  .dessert-info {
     flex-direction: column;
  }
 
 
- .social-media {
+ 
+
+/* Main Header */
+.presentation {
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+header > div:first-child {
+    padding: 0.5rem 0;
+    color: lightslategray;
+}
+.rated-score {
+    font-weight: bold;
+}
+main header button {
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+
+header i,
+li i {
+    color: goldenrod;
+}
+
+
+
+/* Section dessert-info */
+/* under-iframe */
+
+.under-iframe {
+    padding: 2rem 1rem;
+    background-color: whitesmoke;
+}
+
+.under-iframe .flex {
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.under-iframe .center {
+    width: 60%;
+    margin: 0.5rem auto 2rem auto;
+}
+.center hr {
+    margin: 0.5rem 0;
+}
+.center .flex span:first-child {
+    padding: 0.3rem 0.5rem;
+    color: white;
+    background-color:mediumslateblue;
+    border-radius: 5px;
+}
+.center .flex span:last-child{
+    color: goldenrod;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.under-iframe li {
+    margin: 0.8rem;
+}
+.under-iframe li span {
+    font-weight: bold;
+}
+.under-iframe i {
+    margin-right: 10px;
+}
+
+
+/* Social Media Button Section */
+
+.social-media {
     justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
  }
+
+.social-media button {
+    padding: 5px 10px;
+    border-radius: 25%;
+    border: 1px solid lightgray 
+}
+
+/* Colori per i button */
+
+#facebook {
+    color: aqua;
+}
+#twitter {
+    color: blue;
+}
+#instagram {
+    color: deeppink;
+}
+#pinterest {
+    color: red;
+}
+#youtube {
+    color: darkred;
+}
+
+
+/* Tell History  */
+
+.tell-about h2 {
+    margin: 0.5rem 0;
+}
+.custom-hr {
+    width: 15%;
+    border:1px solid goldenrod;
+    margin: 1rem 0;
+}
+.tell-about img {
+    width: 60%;
+    text-align: center;
+}
