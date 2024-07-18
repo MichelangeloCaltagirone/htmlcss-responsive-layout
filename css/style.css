@@ -22,9 +22,14 @@ ul {
 }
 main {
     background-color: lightpink;
+    font-family: Montserrat, 'Helvetica Neue', sans-serif; ;
 }
 footer {
     background-color: violet;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-weight: small;
 }
 
 
@@ -120,6 +125,12 @@ li i {
 .under-iframe i {
     margin-right: 10px;
 }
+.under-iframe li:last-child {
+    font-weight: bold;
+}
+.under-iframe li:last-child span {
+    font-weight: normal;
+}
 
 
 /* Social Media Button Section */
@@ -168,4 +179,29 @@ li i {
 .tell-about img {
     width: 60%;
     text-align: center;
+    display: block;
+    margin: auto;
+}
+.tell-about p {
+    padding: 1rem 0;
+}
+
+
+
+/* Footer */
+
+footer a {
+    color: white;
+}
+
+footer .flex {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .flex > * {
+    flex-basis: 25%;
+    flex-grow: 1;
+    
 }
