@@ -48,15 +48,7 @@ h1 {
 /* Main style */
 /* Section of the info of the dessert */
 
-/* .rated-score::after {
-    /* content: per fargli mettere le icone nel css e non nel html
- } */
 
-
-
- .dessert-info {
-    flex-direction: column;
- }
 
 
  
@@ -65,6 +57,9 @@ h1 {
 .presentation {
     justify-content: space-between;
     padding: 0.5rem 0;
+}
+.dessert-info {
+    flex-direction: column;
 }
 header > div:first-child {
     padding: 0.5rem 0;
@@ -127,9 +122,10 @@ li i {
     font-weight: bold;
 }
 .info-ricetta i {
-    color: goldenrod;
+    color: goldenrod;    
+}
+.under-iframe i {
     margin-right: 0.5rem;
-    
 }
 
 
@@ -149,7 +145,9 @@ li i {
 }
 
 /* Colori per i button */
-
+.social-media span {
+    display: none;
+}
 #facebook {
     color: aqua;
 }
@@ -165,7 +163,11 @@ li i {
 #youtube {
     color: darkred;
 }
-
+/* Section Adv */
+.adv {
+    display: none;
+    margin: 1rem 0;
+}
 
 /* Tell History  */
 

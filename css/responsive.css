@@ -11,6 +11,7 @@
     header h2, .hidden {
         display: inline-block;
         margin-right: 0.5rem;
+        font-size: 30px;
     }
     .flex.info-ricetta {
         flex-direction: row;
@@ -35,6 +36,49 @@
         max-width: 70%;
         margin: 0 auto;
 
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    header h2, .hidden {
+        font-size: 35px;
+    }
+    .dessert-info {
+        flex-direction: row;
+    }
+    .under-iframe {
+        flex-basis: 40%;
+    }
+    .under-iframe .info-ricetta {
+        flex-direction: column;
+    }
+    .under-iframe .center {
+        width: 95%;
+    }
+    .adv {
+        display: block;
+    }
+    .social-media span {
+        display: inline;
+        margin-left: 0.3rem;
+        font-size: small;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0.5rem;
+    }
+    footer > * {
+        flex-basis: 30%;
+    }
+    footer .link-container {
+        margin: 0;
+    }
+    footer .flex {
+        flex-wrap: nowrap;
     }
 
 }
